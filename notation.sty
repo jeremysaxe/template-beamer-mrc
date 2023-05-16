@@ -1,0 +1,67 @@
+% Here, you can define your own macros. Some examples are given below.
+\newcommand{\R}[0]{\mathds{R}} % real numbers
+\newcommand{\Z}[0]{\mathds{Z}} % integers
+\newcommand{\N}[0]{\mathds{N}} % natural numbers
+\newcommand{\C}[0]{\mathds{C}} % complex numbers
+\renewcommand{\vec}[1]{{\boldsymbol{{#1}}}} % vector
+\newcommand{\mat}[1]{{\boldsymbol{{#1}}}} % matrix
+
+%Macros for fast equation typing
+\def\l{\left}
+\def\r{\right}
+\def\mc{\mathcal}
+\def\bs{\boldsymbol}
+\def\R{\mathbb{R}}
+\def\E{\mathbb{E}}
+
+%Use \overbar for better bar accents (instead of \overline or \bar)
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+%Use \argmin instead of \arg\min (max)
+\DeclareMathOperator*{\argmin}{argmin} 
+\DeclareMathOperator*{\argmax}{argmax}
+
+%Use \logit instead of \text{logit}
+\DeclareMathOperator*{\logit}{logit}
+
+%Use \Var instead of \text{Var}
+\DeclareMathOperator*{\Var}{Var}
+
+%Use \Cov instead of \text{Cov}
+\DeclareMathOperator*{\Cov}{Cov}
+
+%Use \Corr instead of \text{Corr}
+\DeclareMathOperator*{\Corr}{Corr}
+
+%Use \EmpSE instead of \text{EmpSE}
+\DeclareMathOperator*{\EmpSE}{EmpSE}
+
+%Use \ModSE instead of \text{ModSE}
+\DeclareMathOperator*{\ModSE}{ModSE}
+
+%Use \low instead of \text{low}
+\DeclareMathOperator*{\low}{low}
+
+%Use \upp instead of \text{upp}
+\DeclareMathOperator*{\upp}{upp}
+
+%Use \Cover instead of \text{Cover}
+\DeclareMathOperator*{\Cover}{Cover}
+
+%Use \BECover instead of \text{B-E Cover}
+\DeclareMathOperator*{\BECover}{B-E Cover}
+
+%Use \Power instead of \text{Power}
+\DeclareMathOperator*{\Power}{Power}
+
+%Use \sim instead of \text{sim}
+\DeclareMathOperator*{\simulations}{sim}
+
+%Use \mis instead of \text{mis}
+\DeclareMathOperator*{\mis}{mis}
+
+%Use \obs instead of \text{obs}
+\DeclareMathOperator*{\obs}{obs}
+
+%Use \MI instead of \text{MI}
+\DeclareMathOperator*{\MI}{MI}

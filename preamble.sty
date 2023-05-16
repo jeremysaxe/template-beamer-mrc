@@ -1,0 +1,58 @@
+\usetheme[progressbar=frametitle]{metropolis}
+
+\usepackage{appendixnumberbeamer}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{fvextra}
+\usepackage{csquotes}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[english]{babel}
+\usepackage{graphics}
+\usepackage{fancyvrb}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{enumitem}
+\newlist{steps}{enumerate}{1}
+\setlist[steps]{leftmargin = 1.5cm, rightmargin = 0cm, itemsep = 0pt, parsep = 0pt, itemindent = 0em}
+\setlist[steps, 1]{label = Step \arabic*., }
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc, shapes.geometric, shapes.multipart, shapes, arrows.meta, arrows, decorations.markings, external, trees}
+
+% Create custom arrow style:
+\tikzstyle{Arrow} = [thick, decoration={markings, mark=at position 1 with {\arrow[thick]{latex}} },
+         shorten >= 3pt, preaction = {decorate}]
+
+\tikzstyle{BlueArrow} = [thick, decoration={markings, mark=at position 1 with {\arrow[thick, blue]{latex}}},
+        shorten >= 3pt, preaction = {decorate}, color = blue]
+
+\definecolor{mrcteal1}{RGB}{0, 190, 213}
+\definecolor{mrcteal2}{RGB}{0, 138, 173} % Create Teal
+\definecolor{mrcorange}{RGB}{255, 105, 0}
+\definecolor{mrcdarkblue}{RGB}{46, 45, 98}
+\definecolor{mrcgray}{RGB}{103, 103, 103}
+\setbeamercolor{palette primary}{bg=mrcteal2,fg=white}
+\setbeamercolor{palette secondary}{bg=mrcteal1,fg=white}
+\setbeamercolor{palette tertiary}{bg=mrcorange,fg=white}
+\setbeamercolor{palette quaternary}{bg=mrctgray,fg=white}
+
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\usepackage[natbib = true, backend=biber, style=nature]{biblatex}
+\addbibresource{references.bib}

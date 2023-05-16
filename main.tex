@@ -1,0 +1,36 @@
+\documentclass[10pt]{beamer}
+
+\usepackage{import}
+\usepackage{preamble}
+\usepackage{notation}
+
+\title{MRC CTU at UCL Template}
+\subtitle{}
+\date{\today}
+\author{}
+\institute{MRC CTU at UCL \\ 
+            Institute of Clinical Trials and Methodology \\ 
+            University College London}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.jpg}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% ------------------  Sections   --------------------
+\input{sections/section-1}
+\input{sections/section-2}
+
+% ------------------  References --------------------
+\begin{frame}[allowframebreaks]{References} 
+\tiny
+\printbibliography
+\end{frame}
+% ------------------  Appendix  --------------------
+
+\end{document}
