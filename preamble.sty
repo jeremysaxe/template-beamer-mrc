@@ -27,11 +27,6 @@
 \usepackage{tcolorbox}
 \usepackage{appendixnumberbeamer}
 
-\usepackage{enumitem}
-\newlist{steps}{enumerate}{1}
-\setlist[steps]{leftmargin = 1.5cm, rightmargin = 0cm, itemsep = 0pt, parsep = 0pt, itemindent = 0em}
-\setlist[steps, 1]{label = Step \arabic*., }
-
 \usepackage{tikz}
 \usetikzlibrary{positioning, calc, shapes.geometric, shapes.multipart, shapes, arrows.meta, arrows, decorations.markings, external, trees}
 
@@ -51,6 +46,7 @@
 \setbeamercolor{palette secondary}{bg=mrcteal1,fg=white}
 \setbeamercolor{palette tertiary}{bg=mrcorange,fg=white}
 \setbeamercolor{palette quaternary}{bg=mrctgray,fg=white}
+\setbeamertemplate{itemize items}{\textbullets}
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
