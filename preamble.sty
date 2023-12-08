@@ -1,9 +1,7 @@
 \usetheme[progressbar=frametitle]{metropolis}
-
 \usepackage{appendixnumberbeamer}
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
-
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 \usepackage{fvextra}
@@ -25,7 +23,8 @@
 \usepackage{float}
 \usepackage{minted}
 \usepackage{tcolorbox}
-\usepackage{appendixnumberbeamer}
+\usepackage{animate}
+\usepackage{adjustbox}
 
 \usepackage{tikz}
 \usetikzlibrary{positioning, calc, shapes.geometric, shapes.multipart, shapes, arrows.meta, arrows, decorations.markings, external, trees}
@@ -37,8 +36,14 @@
 \tikzstyle{BlueArrow} = [thick, decoration={markings, mark=at position 1 with {\arrow[thick, blue]{latex}}},
         shorten >= 3pt, preaction = {decorate}, color = blue]
 
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\usepackage[natbib=true, style=authoryear-comp, backend=biber, maxcitenames=1, firstinits=true, uniquename=false, maxbibnames=99, url=false, doi=false, isbn=false, eprint=false, backref=false]{biblatex}
+\addbibresource{references.bib}
+\renewcommand\bibfont{\scriptsize}
+
 \definecolor{mrcteal1}{RGB}{0, 190, 213}
-\definecolor{mrcteal2}{RGB}{0, 138, 173} % Create Teal
+\definecolor{mrcteal2}{RGB}{0, 138, 173}
 \definecolor{mrcorange}{RGB}{255, 105, 0}
 \definecolor{mrcdarkblue}{RGB}{46, 45, 98}
 \definecolor{mrcgray}{RGB}{103, 103, 103}
@@ -46,10 +51,8 @@
 \setbeamercolor{palette secondary}{bg=mrcteal1,fg=white}
 \setbeamercolor{palette tertiary}{bg=mrcorange,fg=white}
 \setbeamercolor{palette quaternary}{bg=mrctgray,fg=white}
-\setbeamertemplate{itemize items}{\textbullets}
+\setbeamertemplate{itemize items}{\textbullet}
 
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
-
-\usepackage[natbib = true, backend=biber, style=nature]{biblatex}
-\addbibresource{references.bib}
-\renewcommand\bibfont{\scriptsize}
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
